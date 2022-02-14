@@ -1,11 +1,11 @@
 {
     "name": "talion-moderation-system",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "factorio_version": "1.1",
     "title": "Talion moderation system",
     "author": "ZwerOxotnik",
     "contact": "zweroxotnik@gmail.com, Discord:ZwerOxotnik#7117",
     "homepage": "https://www.reddit.com/r/ZwerOxotnik",
-    "description": "see  locale/*",
+    "description": "see locale/*",
     "dependencies": []
 }
