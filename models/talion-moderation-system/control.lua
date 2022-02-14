@@ -43,21 +43,24 @@ end
 
 
 M.on_nth_tick = {
-	-- each 40 min increments player's rank
-	[60 * 60 * 10] = function()
+	-- each N min increments player's rank
+	[60 * 60] = function()
 		local get_group = game.permissions.get_group
 		local connected_players = game.connected_players
+		local need_time = 60 * 60 * settings.global["tms-add-rank-each-nth-minute"].value
 		for i=1, #connected_players do
 			local player = connected_players[i]
-			if player.valid and not player.admin and
-				players_last_tick_rank_gift[player.index] <= game.tick + 60 * 60 * 40
-			then
-				players_last_tick_rank_gift[player.index] = game.tick
-				local id = tonumber(player.permission_group.name)
-				if id then
-					local group2 = get_group(tostring(id + 1))
-					if group2 then
-						group2.add_player(player)
+			if player.valid and not player.admin and player.afk_time < 60 * 60 * 5 then
+				local player_index = player.index
+				local player_last_tick_rank_gift = players_last_tick_rank_gift[player_index]
+				if game.tick >= player_last_tick_rank_gift + need_time then
+					players_last_tick_rank_gift[player_index] = game.tick
+					local id = tonumber(player.permission_group.name)
+					if id then
+						local group2 = get_group(tostring(id + 1))
+						if group2 then
+							group2.add_player(player)
+						end
 					end
 				end
 			end
