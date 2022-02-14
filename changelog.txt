@@ -1,0 +1,6 @@
+﻿---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2022-02-14
+  Changes:
+    - Fully changed, more features (the system doesn't include players as admins anymore)
+    - Perhaps, there's weird bug with ranks

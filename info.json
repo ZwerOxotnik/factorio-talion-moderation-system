@@ -1,11 +1,11 @@
 {
     "name": "talion-moderation-system",
-    "version": "0.1.1",
-    "factorio_version": "0.18",
-    "title": "Talion moderation system [PRE-BETA]",
+    "version": "0.4.0",
+    "factorio_version": "1.1",
+    "title": "Talion moderation system",
     "author": "ZwerOxotnik",
     "contact": "zweroxotnik@gmail.com, Discord:ZwerOxotnik#7117",
     "homepage": "https://www.reddit.com/r/ZwerOxotnik",
-    "description": "Each player can be an admin but each action takes a cost. Uses for moderation with turned off commands. This system effective when more than 4-6 players and had been created for a social experiment of Gadelarix, thus I'll change this system later. Some messages still didn't add.",
+    "description": "see locale/*",
     "dependencies": []
 }

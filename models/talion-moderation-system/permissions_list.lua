@@ -3,7 +3,6 @@ return {
 	["10"] =
 	{
 		defines.input_action.add_permission_group,
-		defines.input_action.edit_permission_group,
 	},
 	["9"] =
 	{
@@ -84,6 +83,11 @@ return {
 	},
 	["0"] =
 	{
-
+	},
+	["-1"] =
+	{
+	},
+	["-2"] =
+	{
 	}
 }
