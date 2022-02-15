@@ -1,9 +1,17 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2022-02-15
+  Features:
+    - Added user interface for the mod (open your inventory and click on new button)
+  Changes:
+    - The system should work now
+    - Removed some commands
+---------------------------------------------------------------------------------------------------
 Version: 0.4.3
 Date: 2022-02-15
   Changes:
     - Removed unnecessary messages
-    - WARNING: For some reason, players can't moved to other group by scripts. Wait a fix.
+    - WARNING: from v0.4.0 to this doesn't work properly
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.2
 Date: 2022-02-14

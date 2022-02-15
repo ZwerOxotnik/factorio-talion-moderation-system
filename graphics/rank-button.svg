@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="rank-button.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     height="210mm"
+     inkscape:zoom="0.2605745"
+     inkscape:cx="709.96971"
+     inkscape:cy="402.95578"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="S"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.238125;paint-order:stroke fill markers"
+       id="rect868"
+       width="74.630768"
+       height="21.323076"
+       x="62.684616"
+       y="90.134651"
+       ry="0.34395832" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.289531;paint-order:stroke fill markers"
+       id="rect1515"
+       width="110.33098"
+       height="21.323076"
+       x="44.834511"
+       y="58.345535"
+       ry="0.34395832" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.33544;paint-order:stroke fill markers"
+       id="rect1515-6"
+       width="148.09425"
+       height="21.323076"
+       x="25.952873"
+       y="26.556423"
+       ry="0.34395832" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.33544;paint-order:stroke fill markers"
+       id="rect1515-6-1"
+       width="148.09425"
+       height="21.323076"
+       x="25.952873"
+       y="153.71289"
+       ry="0.34395832" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.289531;paint-order:stroke fill markers"
+       id="rect1515-2"
+       width="110.33098"
+       height="21.323076"
+       x="44.834511"
+       y="121.92378"
+       ry="0.34395832" />
+  </g>
+</svg>

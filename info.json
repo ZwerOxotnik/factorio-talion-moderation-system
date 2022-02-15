@@ -1,11 +1,14 @@
 {
     "name": "talion-moderation-system",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "factorio_version": "1.1",
     "title": "Talion moderation system",
     "author": "ZwerOxotnik",
     "contact": "zweroxotnik@gmail.com, Discord:ZwerOxotnik#7117",
     "homepage": "https://www.reddit.com/r/ZwerOxotnik",
     "description": "see locale/*",
-    "dependencies": []
+    "dependencies": [
+			"flib",
+			"zk-lib >= 0.10.0"
+		]
 }
