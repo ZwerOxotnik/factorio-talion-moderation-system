@@ -89,9 +89,9 @@ local function switch_rank_gui(player)
 	if #connected_players <= 30 then
 		for i=1, #connected_players do
 			local _player = connected_players[i]
-			-- if _player.index ~= player_index then
+			if _player.index ~= player_index then
 				found_players[#found_players+1] = _player.name
-			-- end
+			end
 		end
 		if #found_players > 0 then
 			dropdown.items = found_players
