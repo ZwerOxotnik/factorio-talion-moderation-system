@@ -124,11 +124,16 @@ local GUIS = {
 	end,
 	["TMS_search"] = function(element, player)
 		local parent = element.parent
-		local textfield = parent.TMS_player_search_text
+		local text = parent.TMS_player_search_text.text
+
+		if #text > 30 then
+			player.print({"gui-auth-server.username-too-long"})
+			return
+		end
 
 		local found_players = {}
 		--TODO: fix % symbol
-		local search_pattern = gsub(textfield.text, "%+", "%%+")
+		local search_pattern = gsub(text, "%+", "%%+")
 		search_pattern = gsub(search_pattern, "%-", "%%-")
 		search_pattern = gsub(search_pattern, "%?", "%%?")
 		search_pattern = gsub(search_pattern, "%(", "%%(")
