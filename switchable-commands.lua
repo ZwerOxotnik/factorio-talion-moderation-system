@@ -18,5 +18,5 @@ Returns tables of commands without functions as command "settings". All paramete
 return {
 	["increase-rank"] = {input_type = "player", is_allowed_empty_args = false},
 	["decrease-rank"] = {input_type = "player", is_allowed_empty_args = false},
-	["show-rank"] = {input_type = "player"},
+	["show-rank"]     = {input_type = "player"},
 }

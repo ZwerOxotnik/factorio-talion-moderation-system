@@ -255,7 +255,6 @@ M.commands = {
 			return
 		end
 
-		game.print(sender_rank)
 		get_group(tostring(sender_rank)).add_player(sender)
 		get_group(tostring(target_rank)).add_player(target)
 		game.print({"talion-moderation-system.player-decreased-rank", sender.name, target.name})

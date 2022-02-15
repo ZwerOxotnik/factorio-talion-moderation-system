@@ -1,4 +1,10 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 2022-02-15
+  Changes:
+    - Removed unnecessary messages
+    - WARNING: For some reason, players can't moved to other group by scripts. Wait a fix.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.2
 Date: 2022-02-14
   Features:
