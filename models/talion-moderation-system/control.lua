@@ -74,14 +74,14 @@ M.add_remote_interface = function()
 end
 
 local function link_data()
-	mod_data = global.free_market
+	mod_data = global.TMS
 	players_last_tick_rank_gift = mod_data.players_last_tick_rank_gift
 end
 
 
 local function update_global_data()
-	global.free_market = global.free_market or {}
-	mod_data = global.free_market
+	global.TMS = global.TMS or {}
+	mod_data = global.TMS
 	mod_data.players_last_tick_rank_gift = mod_data.players_last_tick_rank_gift or {}
 
 	link_data()
