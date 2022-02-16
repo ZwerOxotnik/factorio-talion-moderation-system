@@ -132,17 +132,7 @@ local GUIS = {
 		end
 
 		local found_players = {}
-		local search_pattern = gsub(text, "%+", "%%+")
-		search_pattern = gsub(search_pattern, "%%", "%%%%")
-		search_pattern = gsub(search_pattern, "%-", "%%-")
-		search_pattern = gsub(search_pattern, "%?", "%%?")
-		search_pattern = gsub(search_pattern, "%(", "%%(")
-		search_pattern = gsub(search_pattern, "%)", "%%)")
-		search_pattern = gsub(search_pattern, "%*", "%%*")
-		search_pattern = gsub(search_pattern, "%[", "%%[")
-		search_pattern = gsub(search_pattern, "%]", "%%]")
-		search_pattern = gsub(search_pattern, "%^", "%%^")
-		search_pattern = gsub(search_pattern, "%$", "%%$")
+		local search_pattern = text:gsub("%-", "%%-")
 		search_pattern = ".+" .. search_pattern .. ".+"
 		local player_index = player.index
 		for target_index, target in pairs(game.players) do
