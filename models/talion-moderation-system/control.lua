@@ -84,20 +84,17 @@ local function switch_rank_gui(player)
 	flow2.style.top_padding = 4
 
 	local dropdown = flow2.add{type = "drop-down", name = "TMS_players_dropdown"}
-	local connected_players = game.connected_players
 	local found_players = {}
-	if #connected_players <= 30 then
-		for i=1, #connected_players do
-			local _player = connected_players[i]
-			if _player.index ~= player_index then
-				found_players[#found_players+1] = _player.name
-			end
-		end
-		if #found_players > 0 then
-			dropdown.items = found_players
-			dropdown.selected_index = 1
+	for index, _player in pairs(game.players) do
+		if index ~= player_index then
+			found_players[#found_players+1] = _player.name
 		end
 	end
+	if #found_players > 0 then
+		dropdown.items = found_players
+		dropdown.selected_index = 1
+	end
+
 	flow2.add{type = "button", name = "TMS_minus_rank", caption = "-"}.style.minimal_width = 30
 	flow2.add{type = "button", name = "TMS_plus_rank", caption = "+"}.style.minimal_width = 30
 
