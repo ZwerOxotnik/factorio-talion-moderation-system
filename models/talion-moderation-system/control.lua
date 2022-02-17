@@ -162,7 +162,7 @@ local GUIS = {
 		local player_name = drop_down.items[drop_down.selected_index]
 		local target = game.get_player(player_name)
 		if not (target and target.valid) then
-			player.print({"error.error-message-box-title"})
+			player.print({"player-doesnt-exist", player_name})
 			return
 		elseif target.admin then
 			player.print({"talion-moderation-system.you-cant-change-rank-of-admins"}, {1, 0, 0})
@@ -229,7 +229,7 @@ local GUIS = {
 		local player_name = drop_down.items[drop_down.selected_index]
 		local target = game.get_player(player_name)
 		if not (target and target.valid) then
-			player.print({"error.error-message-box-title"})
+			player.print({"player-doesnt-exist", player_name})
 			return
 		elseif target.admin then
 			player.print({"talion-moderation-system.you-cant-change-rank-of-admins"}, {1, 0, 0})
@@ -434,7 +434,7 @@ M.commands = {
 		if cmd.parameter then
 			local target = game.get_player(cmd.parameter)
 			if not (target and target.valid) then
-				sender.print({"error.error-message-box-title"})
+				sender.print({"player-doesnt-exist", cmd.parameter})
 				return
 			elseif not target.permission_group then
 				sender.print({"talion-moderation-system.target-dont-have-rank"}, {1, 1, 0})
