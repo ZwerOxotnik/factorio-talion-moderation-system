@@ -1,4 +1,11 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 0.5.5
+Date: 2022-02-19
+  Changes:
+    - Small improvements
+    - WARNING: perhaps this isn't stable
+    - (For some reason, previous versions desynced after each N minute)
+---------------------------------------------------------------------------------------------------
 Version: 0.5.4
 Date: 2022-02-16
   Changes:

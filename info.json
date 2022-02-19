@@ -1,6 +1,6 @@
 {
     "name": "talion-moderation-system",
-    "version": "0.5.4",
+    "version": "0.5.5",
     "factorio_version": "1.1",
     "title": "Talion moderation system",
     "author": "ZwerOxotnik",
@@ -8,7 +8,7 @@
     "homepage": "https://www.reddit.com/r/ZwerOxotnik",
     "description": "see locale/*",
     "dependencies": [
-			"flib",
-			"zk-lib >= 0.10.0"
-		]
+        "flib",
+        "zk-lib >= 0.10.0"
+    ]
 }

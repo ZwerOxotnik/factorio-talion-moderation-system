@@ -174,7 +174,12 @@ local GUIS = {
 			player.print({"error.error-message-box-title"})
 			return
 		elseif #game.connected_players <= settings.global["tms-minimum-players"].value then
-			player.print({"talion-moderation-system.not-enough-online-players", #game.connected_players}, {1, 1, 0})
+			player.print(
+				{
+					"talion-moderation-system.not-enough-online-players",
+					settings.global["tms-minimum-rank-for-changing-ranks"].value
+				}, {1, 1, 0}
+			)
 			return
 		end
 
@@ -284,6 +289,7 @@ local GUIS = {
 local function on_gui_click(event)
 	local element = event.element
 	if not (element and element.valid) then return end
+
 	local f = GUIS[element.name]
 	if f then
 		f(element, game.get_player(event.player_index), event)
@@ -307,12 +313,9 @@ M.on_nth_tick = {
 	-- each N min increments player's rank
 	[60 * 60] = function()
 		local get_group = game.permissions.get_group
-		local connected_players = game.connected_players
 		local need_time = 60 * 60 * settings.global["tms-add-rank-each-nth-minute"].value
-		for i=1, #connected_players do
-			local player = connected_players[i]
+		for player_index, player in pairs(game.connected_players) do -- will it work?
 			if player.valid and not player.admin and player.afk_time < 60 * 60 * 5 then
-				local player_index = player.index
 				local player_last_tick_rank_gift = players_last_tick_rank_gift[player_index]
 				if game.tick >= player_last_tick_rank_gift + need_time then
 					players_last_tick_rank_gift[player_index] = game.tick
